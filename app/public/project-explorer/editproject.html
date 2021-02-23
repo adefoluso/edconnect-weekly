@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>
            document 
@@ -21,30 +21,30 @@
         </nav>
 
         <section>
-          <h2>Project 1</h2>
+          <h1>Project 1</h1>
             <ul>
              <li>Created by: Jane Doe</li>
              <li>Date Created: 00/00/0000</li>
-             <li> Last Updated: 01/01/0001</li>
+             <li>Last Updated: 01/01/0001</li>
             </ul>
         </section>
           
         <section>
+            <h1> Edit Project</h1>
            <form action="#" name="editProject">
-                <h2> Edit Project</h2>
                 <label for="name">Project Name:</label><br>
                 <input type = "text" name="name"><br>
                 <br>
                 <label for="abstract">Project Abstract:</label><br>
-                <textarea name ="abstract"></textarea>
+                <textarea id="abstract" name ="abstract"></textarea>
                 <br>
                 <label for="authors">Authors:</label><br>
                 <input type ="text" name ="authors">
                 <br><br>
                 <label for="tags">Tags(s):</label><br>
-                <input type="text" name="tags"><br><br>
+                <input type="text" name="tags" id="tags"><br><br>
                 <label for="projectFile">Upload File</label><br>
-                <input type="file" name="projectFile"><br>
+                <input type="file" name="projectFile" id="projectFile"><br>
                 <br>
                 <input type="submit">
            </form>
