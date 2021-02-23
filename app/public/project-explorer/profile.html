@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+      <meta charset="UTF-8">
         <title>
             
         </title>
@@ -18,10 +18,10 @@
          <a href="login.html">Login</a>
          <a href="register.html">Register</a>
         </nav>
-
+       
         <section>
          <h2>John Doe</h2>
-         <h3>john.doe@gmail.com</h3>
+         <p>john.doe@gmail.com</p>
          <ul>
              <li>Program: Computer Science</li>
              <li>Matric: 00/0000</li>
@@ -30,24 +30,24 @@
         </section>
         
         <h2>Update Profile</h2>
-        <form name="updateProfile">
-         <label>First Name: </label>
+        <form action="#" name="updateProfile">
+         <label for="firstName">First Name: </label>
           <input type="text"  name = "firstName" > <br><br>
-          <label>Last Name: </label>
+          <label for="lastName">Last Name: </label>
           <input type="text"  name = "lastName"> <br><br>
-          <label>Email Address: </label>
+          <label for="email">Email Address: </label>
           <input type="email"  name = "email"> <br><br>
-          <label>Matric Number: </label>
-          <input type="text"  name = "matricNumber"> <br><br>
-          <label>Program:</label>
+          <label for="matricNumber">Matric Number: </label>
+          <input type="text"  name="matricNumber"> <br><br>
+          <label for="program">Program:</label>
             <select name="program">
               <option value="computer_science">Computer Science</option>
               <option value="computer_information_systems">Computer Information Systems</option>
               <option value="computer_technology">Computer Technology</option>
             </select>
             <br><br>
-          <label>Graduation Year:</label> 
-          <select name="graduationYear">
+          <label for="graduationYear">Year Of Graduation:</label> 
+          <select name="graduationYear" id="graduationYear">
              <option value="2013">2013</option>
              <option value="2014">2014</option>
              <option value="2015">2015</option>
@@ -64,14 +64,15 @@
         <section>
 
             <h1>Change Password</h1>
-            <form name="changePassword">
-              <label>Current Paasword:</label>
+            <form action="#" name="changePassword">
+              <label for="currentPassword">Current Paasword:</label>
               <input type="password" name="currentPassword"> <br><br>
-              <label>New Password:</label>
+              <label for="newPassword">New Password:</label>
               <input type="password" name="newPassword"><br><br>
-              <label>Confirm Password:</label>
+              <label for="confirmPassword">Confirm Password:</label>
               <input type="password" name="confirmPassword"><br><br>
               <input type = "submit">
+
             </form>
          
         </section>
