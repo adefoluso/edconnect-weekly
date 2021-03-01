@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <form class="form-inline" name="searchForm">
+                            <form action="" class="form-inline" name="editProjectForm">
                                 <label class="sr-only" for="inlineFormInputName2">Name</label>
                                 <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
                                     placeholder="Search Projects">
@@ -47,96 +47,80 @@
     
     
         <main class="container">
-            <section>
-                <div>
-                    <h3>Project 1</h3>
-                </div>
-    
-                <div class="row bg-light">
-                    <div class="col">
-                        <p>Created By</p>
-                        <p>Adedeji Foluso</p>
-                    </div>
-                    <div class="col">
-                        <p>Date Created</p>
-                        <p>2021-02-11</p>
-                    </div>
-                    <div class="col">
-                        <p>Last Updated</p>
-                        <p>2021-02-11</p>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex justify-content-end"><a href="viewproject.html" class=" btn btn-primary">View
-                                Project</a></div>
-                    </div>
-                </div>
-            </section>
+            <h2>Project 1</h2>
             <br>
-    
-    
-            <section class="row">
+            <div class="custom-jumbotron">
+                <div class="row">
+                    <div class="col">
+                        <li>Created By</li>
+                        <li>Ade Chris</li>
+                    </div>
+                    <div class="col">
+                        <li>
+                            Date Created
+                        </li>
+                        <li>03/03/2020</li>
+                    </div>
+                    <div class="col">
+                        <li>Last Updated</li>
+                        <li>04/04/2020</li>
+                    </div>
+                    <div class="col text-right">
+                        <!--  -->
+                        <div>
+                            <a href="viewproject.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col">
+
+                    <h4>Edit Project</h4>
                     <form>
-                        <div class="mx-auto">
-                            <h5>Edit Project</h5>
-                            <div class="form-group">
-                                <label for="name">Project Name</label>
-                                <input name="name" id="name" class="form-control" type="text" aria-describedby="name"
-                                    placeholder="Project 1">
-                            </div>
-                            <div class="form-group">
-                                <label for="abstract">Project Abstract</label>
-                                <textarea id="abstract" class="form-control" rows="5"
-                                    name="abstract">Project 1 is very interesting</textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="authors">Author(s)</label>
-                                <input name="authors" id="authors" class="form-control" type="text"
-                                    placeholder="Adedeji Foluso">
-                            </div>
-                            <div class="form-group">
-                                <label for="tags">Tag(s)</label>
-                                <input name="tags" id="tags" type="text" class="form-control" placeholder="#web">
-                            </div>
-                            <button type="submit" class="btn btn-primary">Save</button>
+                        <div class="form-group">
+                            <label for="Project-name">Project Name</label>
+
+                            <input type="text" name="name" value="Project 4" class="form-control" />
                         </div>
+                        <div class="form-group">
+                            <label for="Project-abstract">Project Abstract</label>
+
+                            <textarea name="abstract" class="form-control" cols="30" rows="7">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores atque praesentium ducimus. In ipsa eius maiores nemo accusamus unde, assumenda, veritatis voluptatem facilis eum neque quia, animi autem voluptatum a.
+                            </textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="Authors">Author(s)</label>
+
+                            <input type="text" name="authors" value="Ade Chris" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="tag">Tag(s)</label>
+
+                            <input type="text" name="tags" value="#web" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            Save
+                        </button>
                     </form>
-    
-    
                 </div>
                 <div class="col">
-    
-                    <div>
-                        <form>
-                            <div class="form-row">
-                                <div class="col-9">
-                                    <label for="searchText"></label>
-                                    <input type="text" class="form-control" placeholder="First name" id="searchText">
-                                </div>
-                                <br>
-                                <div class="col-3">
-                                    <label for="exampleFormControlFile1"></label>
-                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
-                                </div>
-                            </div>
-                        </form>
-    
-                    </div>
-    
-                    <div class="card">
-                        <div class="card-header text-center">
-                            <b>Project files</b>
-                        </div>
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                No file uploaded yet
-                            </blockquote>
-                        </div>
-                    </div>
-    
+                    <h4>Manage Project Files</h4>
+
+                    <input type="file" name="file" value="Click to open file browser" class="form-control " />
+                    <br>
+                    <ul class="list-group card">
+                        <li class="list-group-item list-group-item-secondary card-header">
+                            Project Files
+                        </li>
+                        <li class="list-group-item text-center">
+                            No File uploaded yet
+                        </li>
+                    </ul>
                 </div>
-    
-            </section>
+
+            </div>
         </main>
         <br>
     

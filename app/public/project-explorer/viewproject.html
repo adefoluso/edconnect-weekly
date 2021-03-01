@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> document </title>
         <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
     </head>
     <body>
 
@@ -20,9 +20,9 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <form class="form-inline" name="searchForm">
+                            <form action="" class="form-inline" name="searchForm">
                                 <label class="sr-only" for="inlineFormInputName2">Name</label>
-                                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                                <input type="search" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
                                     placeholder="Search Projects">
                                 <button type="submit" class="btn  btn-outline-light mb-2">Search</button>
                             </form>
@@ -44,94 +44,77 @@
         </header>
         <br>
     
-        <main class="container">
-    
-            <section>
-                <div class="row">
-                    <h3>Project 1</h3>
-                </div>
-    
-                <div class="row bg-light">
-                    <div class="col-sm">
-                        <p>Created By</p>
-                        <p>Adedeji Foluso</p>
+        <div class="container">
+            <h2>Project 4</h2>
+            <div class="custom-jumbotron">
+                <ul class="row align-items-center">
+                    <div class="col-3">
+                        <li>Created By</li>
+                        <li>Ade Chris</li>
                     </div>
-                    <div class="col-sm">
-                        <p>Date Created</p>
-                        <p>2021-02-11</p>
+                    <div class="col-3">
+                        <li>
+                            Date Created
+                        </li>
+                        <li>03/03/2020</li>
                     </div>
-                    <div class="col-sm">
-                        <p>Last Updated</p>
-                        <p>2021-02-11</p>
+                    <div class="col-3">
+                        <li>Last Updated</li>
+                        <li>04/04/2020</li>
                     </div>
-                    <div class="col-sm">
-                        <div class="d-flex justify-content-end"><a href="editproject.html" class=" btn btn-primary">Edit
-                                Project</a></div>
+                    <div class="col-3">
+                        <a href="editproject.html" class="btn btn-primary">
+                            Edit Project
+                        </a>
+                        </a>
                     </div>
-                </div>
-            </section>
-            <br>
-    
-    
-            <section class="row">
-                <div class="col-md-6">
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <h2>Project Abstract</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, eum.
+                        Reiciendis ex maxime, corrupti culpa nam impedit placeat quam quidem
+                        iusto. Rerum quisquam ipsam eligendi harum numquam minima, quis
+                        molestias magnam quaerat maiores, ratione porro voluptatum nemo non
+                        iusto error, aliquid molestiae enim! Officiis animi quo omnis
+                        pariatur blanditiis nobis!
+                    </p>
                     <div>
-                        <h5>Project Abstract</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolores consequatur omnis saepe
-                            iste, aut
-                            ipsum iure necessitatibus in! Animi, necessitatibus ipsa vitae in corporis provident voluptatum
-                            rerum
-                            minus culpa quasi omnis molestias, temporibus a iusto magnam obcaecati beatae, alias pariatur? A
-                            nihil
-                            illum vel sed, quae ab mollitia doloribus expedita quo error ad, inventore, natus quisquam
-                            facere dicta
-                            quasi tenetur laborum. Assumenda omnis totam magni cumque quidem aliquid sequi repellat nobis
-                            eveniet!</p>
-    
+                        <h2>Comments</h2>
+                        <textarea name="comments" placeholder="leave a comment" id="" cols="50" rows="10"></textarea>
                     </div>
-                    <form>
-                        <div class="mx-auto">
-                            <div class="form-group">
-                                <label for="abstract"><b>Comments</b></label>
-                                <textarea id="abstract" class="form-control" rows="5"
-                                    name="abstract">Leave a comment</textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
-                        </div>
-                    </form>
+                    <hr>
+                    <p>No comments yet</p>
                 </div>
-                <div class="col-md-6">
-                    <section>
-                        <h5>Project Details</h5>
-                        <div class="card">
-                            <div class="card-header">
-                                <b>Author(s)</b>
-                            </div>
-                            <div class="card-body">
-                                <p class="card-text">Adedeji Foluso</p>
-                            </div>
-                            <div class="card-footer text-primary">
-                                <b>#web</b>
-                            </div>
-                        </div>
-                    </section>
-                    <br>
-    
+                <div class="col-6 ">
+                    <h2>
+                        Project Details
+                    </h2>
                     <div class="card">
-                        <div class="card-header text-center">
-                            <b>Project files</b>
-                        </div>
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                No file uploaded yet
-                            </blockquote>
-                        </div>
+                        <ul class="list-group card-header">
+                            <li class="list-group-item list-group-item-secondary">Author(s)</li>
+                            <li class="list-group-item">Ade Chris</li>
+                            <li class="list-group-item list-group-item-secondary text-primary">#web</li>
+
+
+                        </ul>
+                        <br>
+                        <ul class="list-group card-header">
+                            <li class="list-group-item list-group-item-secondary">
+                                Project Files
+                            </li>
+                            <li class="list-group-item text-center">
+                                No File uploaded yet
+                            </li>
+                        </ul>
                     </div>
-    
+
                 </div>
-    
-            </section>
-        </main>
+            </div>
+        </div>
         <br>
     
         <footer class="fixed-bottom">
